@@ -1,0 +1,10 @@
+# pre-condition
+Get into the directory with the Dockerfile
+
+# to create the image
+docker build -t ipstack .
+
+# to run the image
+docker run -it --name ipstack ipstack
+root@d6e8c1bdbb9d:/# cd usr/src/ipstack/
+root@d6e8c1bdbb9d:/usr/src/ipstack# python get_lati_longi.py 8.8.8.8
